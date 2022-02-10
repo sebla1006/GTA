@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const { Client, Intents, MessageEmbed } = require('discord.js');
 const client = new Client({ intents: [ Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.DIRECT_MESSAGES, Intents.FLAGS.DIRECT_MESSAGE_REACTIONS], partials: ['CHANNEL']});
 const { staffPermission, ticketCategoryChannelId } = require("./config.json");
